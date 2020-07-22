@@ -1,0 +1,3 @@
+輸入的影像:				InputFrame
+資料的有效性:				Validity
+偵測到的Marker影像:		DetectedMarker
