@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1eQDkjO6KIJhiiFqp2wNGIJKcjWgsp9KKrkSuKaPhNVjOd8jtxQVS6drdmVtAKERQ6XhTuKQ4AIWY43hw0W7gA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\FamilyZheng\\Desktop\\SmartAutoAR\\SmartAutoAR\\SmartAutoAR.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\FamilyZheng\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

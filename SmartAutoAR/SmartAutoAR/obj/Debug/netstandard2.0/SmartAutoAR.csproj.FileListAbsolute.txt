@@ -1,0 +1,5 @@
+C:\Users\FamilyZheng\Desktop\SmartAutoAR\SmartAutoAR\bin\Debug\netstandard2.0\SmartAutoAR.deps.json
+C:\Users\FamilyZheng\Desktop\SmartAutoAR\SmartAutoAR\bin\Debug\netstandard2.0\SmartAutoAR.dll
+C:\Users\FamilyZheng\Desktop\SmartAutoAR\SmartAutoAR\obj\Debug\netstandard2.0\SmartAutoAR.csprojAssemblyReference.cache
+C:\Users\FamilyZheng\Desktop\SmartAutoAR\SmartAutoAR\obj\Debug\netstandard2.0\SmartAutoAR.AssemblyInfoInputs.cache
+C:\Users\FamilyZheng\Desktop\SmartAutoAR\SmartAutoAR\obj\Debug\netstandard2.0\SmartAutoAR.AssemblyInfo.cs
