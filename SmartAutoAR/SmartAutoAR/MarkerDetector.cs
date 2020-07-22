@@ -12,7 +12,7 @@ namespace SmartAutoAR
 		public Matrix4 ViewMatrix { get; protected set; }
 		public Bitmap DetectedMarker { get; protected set; }
 
-		public bool Detecte(Bitmap inputFrame, Bitmap marker)
+		public bool Detecte(Bitmap frame, Bitmap marker)
 		{
 			bool result = false;
 			this.Validity = result;
