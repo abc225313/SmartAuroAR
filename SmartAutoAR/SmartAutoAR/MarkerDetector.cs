@@ -10,11 +10,12 @@ namespace SmartAutoAR
 	{
 		public bool Validity { get; protected set; }
 		public Matrix4 ViewMatrix { get; protected set; }
+		public Vector3 CameraPosition { get; protected set; }
 		public Bitmap DetectedMarker { get; protected set; }
 
 		public bool Detecte(Bitmap frame, Bitmap marker)
 		{
-			bool result = false;
+			bool result = true;
 			this.Validity = result;
 			return result;
 		}

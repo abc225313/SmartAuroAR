@@ -1,4 +1,5 @@
 ﻿using OpenTK;
+using SmartAutoAR.VirtualObject.Cameras;
 using System;
 
 namespace SmartAutoAR
@@ -8,7 +9,8 @@ namespace SmartAutoAR
 	/// </summary>
 	public interface IScene :IDisposable
 	{
-		public void SetViewMatrix(Matrix4 viewMatrix);
+		public ICamera Camera { get; }
+
 		public void Render();
 		public void Resize(int width, int height);
 	}
