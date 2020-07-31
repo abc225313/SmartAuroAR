@@ -2,6 +2,7 @@
 using SmartAutoAR.InputSource;
 using System.Collections.Generic;
 using SmartAutoAR.VirtualObject;
+using OpenTK.Graphics.OpenGL4;
 
 namespace SmartAutoAR
 {
@@ -40,6 +41,11 @@ namespace SmartAutoAR
 					MarkerPairs[marker].Render();
 				}
 			}
+		}
+
+		public void SetWindowSize(int height, int width)
+		{
+			GL.Viewport(0, 0, width, height);
 		}
 	}
 }

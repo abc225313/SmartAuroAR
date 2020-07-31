@@ -34,7 +34,7 @@ namespace Debug
 			workflow = new ArWorkflow(inputSource);
 
 			// 導入 marker圖像
-			marker = new Bitmap("background.jpg");
+			marker = new Bitmap("marker.jpg");
 
 			// 設定場景
 			scene = new Scene();
@@ -48,8 +48,6 @@ namespace Debug
 			// 設定 marker 對應的 scene
 			workflow.MarkerPairs[marker] = scene;
 
-			scene.Camera.Update(Matrix4.Identity, new Vector3(0f, 0f, 3.0f));
-
 			// 啟用需要的擬真方法
 			// LightSourceSimulation = true;
 			// ColorTransfer = true;
@@ -59,8 +57,13 @@ namespace Debug
 
 		protected override void OnRenderFrame(FrameEventArgs e)
 		{
+			// 對下一幀做處理，包含偵測、渲染、擬真
 			workflow.DoWork();
+
+			// 根據輸入影像長寬比改變視窗大小
 			Height = (int)(Width * workflow.AspectRatio);
+
+			// 針對視窗本身做繪製
 			SwapBuffers();
 
 			base.OnRenderFrame(e);
@@ -68,7 +71,8 @@ namespace Debug
 
 		protected override void OnResize(EventArgs e)
 		{
-			scene.Resize(Width, Height);
+			// 改變攝影機的長寬比
+			workflow.SetWindowSize(Width, Height);
 
 			base.OnResize(e);
 		}

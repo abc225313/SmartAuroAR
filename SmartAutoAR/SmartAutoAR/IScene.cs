@@ -12,6 +12,5 @@ namespace SmartAutoAR
 		public ICamera Camera { get; }
 
 		public void Render();
-		public void Resize(int width, int height);
 	}
 }

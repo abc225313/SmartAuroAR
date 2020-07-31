@@ -67,12 +67,6 @@ namespace SmartAutoAR
 			}
 		}
 
-		public void Resize(int width, int height)
-		{
-			GL.Viewport(0, 0, width, height);
-			Camera.AspectRatio = (float)width / (float)height;
-		}
-
 		public void Dispose()
 		{
 			foreach (Model model in Models) model.Dispose();
