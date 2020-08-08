@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="OpenCvSharp4" Version="4.4.0.20200725" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SmartAutoAR\SmartAutoAR.csproj" />
   </ItemGroup>
 
